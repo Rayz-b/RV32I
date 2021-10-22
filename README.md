@@ -2,7 +2,7 @@
 Supported complete RV32I and completed preliminary testing
 ## Instructions supported:
 - Register
-	- add,sub,sll,slt,sltu,xor,srl,sra,or,and
+	- add,sub,sll,slt,sltu,xor,srl,sra,or,and,mul
 - Immediate
 	- addi,slli,slti,sltiu,xori,srli,srai,ori,andi
 - Branch
