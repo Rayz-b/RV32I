@@ -34,23 +34,23 @@ module controller(output reg [2:0] ImmSrc, output reg [3:0] alu_op, output reg [
                     input rst);
                     
         
-        reg R,Ii,S,L,B,J,auipc,lui,jal,jalr;
-        `define Type {R,Ii,S,L,B,J,auipc,lui,jal,jalr}
+        reg R,Ii,S,L,B,auipc,lui,jal,jalr;
+        `define Type {R,Ii,S,L,B,auipc,lui,jal,jalr}
         `define Control {ImmSrc,sel_A, sel_B,wb_sel,reg_wr}
         //determine instruction type
     always@(*)begin    
         if (!rst) begin //what to do for lui, auipc,
-            case(opcode)//Type {R,Ii,S,L,B,J,auipc,lui,jal,jalr}  Type     Description             ALU     sel_A   sel_B   wb_sel  imm_gen     br_type   alu_op  reg_wr      d_wr
-                3: `Type<= 'b0001000000;                         //I-Type   Load                    yes     1       1       2       0           none      0       1           0
-                19:`Type<= 'b0100000000;                         //I-Type   immediate operation     yes     1       1       1       0           none      xxxx    1           0
-                23:`Type<= 'b0000001000;                         //U-Type   auipc                   yes     0       1       1       4(u)        none      0       1           0
-                35:`Type<= 'b0010000000;                         //S-Type   Store                   yes     1       1       z       1           none      0       0           1
-                51:`Type<= 'b1000000000;                         //R-Type   register operation      yes     1       0       1       z           none      xxxx    1           0
-                55:`Type<= 'b0000000100;                         //U-Type   lui                     yes?    1       1       1       4(u)        none      copy    1           0
-                99:`Type<= 'b0000100000;                         //B-Type   conditional branch      yes     0       1       z       2           xxx       0       0           0
-                103:`Type<='b0000000001;                         //I-Type   jalr                    yes     1       1       0       0           uncond    0       1           0
-                111:`Type<='b0000000010;                         //J-Type   jal                     yes     1       1       0       3           uncond    0       1           0
-                default:`Type<='b0000000000;
+            case(opcode)//Type {R,Ii,S,L,B,auipc,lui,jal,jalr}  Type     Description             ALU     sel_A   sel_B   wb_sel  imm_gen     br_type   alu_op  reg_wr      d_wr
+                3: `Type<= 'b000100000;                         //I-Type   Load                    yes     1       1       2       0           none      0       1           0
+                19:`Type<= 'b010000000;                         //I-Type   immediate operation     yes     1       1       1       0           none      xxxx    1           0
+                23:`Type<= 'b000001000;                         //U-Type   auipc                   yes     0       1       1       4(u)        none      0       1           0
+                35:`Type<= 'b001000000;                         //S-Type   Store                   yes     1       1       z       1           none      0       0           1
+                51:`Type<= 'b100000000;                         //R-Type   register operation      yes     1       0       1       z           none      xxxx    1           0
+                55:`Type<= 'b000000100;                         //U-Type   lui                     yes?    1       1       1       4(u)        none      copy    1           0
+                99:`Type<= 'b000010000;                         //B-Type   conditional branch      yes     0       1       z       2           xxx       0       0           0
+                103:`Type<='b000000001;                         //I-Type   jalr                    yes     1       1       0       0           uncond    0       1           0
+                111:`Type<='b000000010;                         //J-Type   jal                     yes     1       1       0       3           uncond    0       1           0
+                default:`Type<='b000000000;
             endcase    
         end   
         else begin
@@ -116,18 +116,17 @@ module controller(output reg [2:0] ImmSrc, output reg [3:0] alu_op, output reg [
     end
     //Fix control signals for each instruction type
     always@(*)begin
-        case(`Type)//Type {R,Ii,S,L,B,J,auipc,lui,jal,jalr}//-*remove J ---unnecessary
+        case(`Type)//Type {R,Ii,S,L,B,auipc,lui,jal,jalr}
         //Control {ImmSrc,sel_A, sel_B,wb_sel,reg_wr}
-            10'b1000000000:`Control<=8'bzzz10011;//R
-            10'b0100000000:`Control<=8'b00011011;//Ii
-            10'b0010000000:`Control<=8'b00111zz0;//S
-            10'b0001000000:`Control<=8'b00011101;//L
-            10'b0000100000:`Control<=8'b01001zz0;//B
-            10'b0000010000:`Control<=8'b10011001;//J        //-*ommit
-            10'b0000001000:`Control<=8'b01101011;//auipc
-            10'b0000000100:`Control<=8'b01111011;//lui
-            10'b0000000010:`Control<=8'b10001001;//jal
-            10'b0000000001:`Control<=8'b00001001;//jalr
+            10'b100000000:`Control<=8'bzzz10011;//R
+            10'b010000000:`Control<=8'b00011011;//Ii
+            10'b001000000:`Control<=8'b00111zz0;//S
+            10'b000100000:`Control<=8'b00011101;//L
+            10'b000010000:`Control<=8'b01001zz0;//B
+            10'b000001000:`Control<=8'b01101011;//auipc
+            10'b000000100:`Control<=8'b01111011;//lui
+            10'b000000010:`Control<=8'b10001001;//jal
+            10'b000000001:`Control<=8'b00001001;//jalr
             default: `Control<=0;
         endcase
     end
