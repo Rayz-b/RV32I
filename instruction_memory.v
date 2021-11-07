@@ -1,6 +1,6 @@
 module instruction_memory (output reg [31:0] Instr, input [31:0] PC);
     always@(PC) begin
-        case (PC)//currently populated with dummy values, copy contents from previous code
+        case (PC)
 		0: Instr<=32'h04000413;
 		4: Instr<=32'h03200493;
 //		8: Instr<=32'h008000a3;//sb
