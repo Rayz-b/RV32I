@@ -68,8 +68,8 @@ module alu(input [31:0] A,B,  // ALU 8-bit Inputs
         ALU_Result <= A ^ B;
 //       4'b1011: //  copy A                //excluded
 //         ALU_Result <= A;
-      4'b1100: //  shift left 12 for U-Type Instructions
-        ALU_Result <= B << 12;
+      4'b1100: //  copy B for lui
+        ALU_Result <= B;
       4'b1101: // Greater comparison unsigned
         ALU_Result <= (A < B)?32'd1:32'd0 ;
       4'b1110: // Greater comparison signed
