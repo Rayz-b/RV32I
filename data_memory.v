@@ -1,6 +1,3 @@
-//convert user_out to digits and display to LED
-//adding user_in, user_wr and user_sel   for user input of two numbers
-//removing reset to allow user input to remain in memory
 //adding support for lw,lb,lh,lbu,lhu
 //memory is byte addressable and thus every word is at an address which is a multiple of 4
 //for a byte read (no. of bytes of alignment - 1 - value of the 2 least significant digits) 
