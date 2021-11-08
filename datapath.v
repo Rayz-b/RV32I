@@ -4,8 +4,7 @@ module datapath(output [6:0] opcode,
                 output [31:0] Result,
                 input rst,clk, reg_wr,sel_A,sel_B,
                 input [1:0] wb_sel,
-                input [2:0] ImmSrc,input [3:0] alu_op, input [2:0] br_type, ReadControl, WriteControl,
-                input [6:0] user_in);
+                input [2:0] ImmSrc,input [3:0] alu_op, input [2:0] br_type, ReadControl, WriteControl);
 	
 	wire [31:0] PC, PCNext, PCPlus4_1, PCPlus4_2, ImmExt, SrcA, RD1, RD2, SrcB, rdata, ALUResult, Instr;
 	wire [24:20] rs2;
