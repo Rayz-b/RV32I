@@ -1,6 +1,7 @@
 # RV32I
 Supported complete RV32I and completed preliminary testing
 - word aligned; byte, half-word and word accessible memory. 
+- added 5 stage pipeline (working with no-ops)
 ## Instructions supported:
 - Register
 	- add,sub,sll,slt,sltu,xor,srl,sra,or,and,mul
