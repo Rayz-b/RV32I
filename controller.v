@@ -25,18 +25,38 @@
 //////////////////////////////////////////////////////////////////////////////////
 //categories:   R,Ii,S,L,B,J
 
-module controller(output reg [2:0] ImmSrc, output reg [3:0] alu_op, output reg [2:0] br_type,ReadControl,WriteControl,
-                    output reg reg_wr, sel_A, sel_B,
-                    output reg [1:0] wb_sel,
+module controller(output reg [2:0] ImmSrc, output [3:0] alu_op_E, output [2:0] br_type_E, rd_en_M, wr_en_M,
+                    output reg_wr_W, sel_A_E, sel_B_E,
+                    output [1:0] wb_sel_W,
+
                     input[6:0] opcode,    //for all instructions
                     input [14:12] funct3, //for R,I,S,B and R4 Type   not for U and J Type
                     input [31:25] funct7, //only for R-Type         //-*change to base x:0
-                    input rst);
+                    input clk, rst);
                     
-        
+        reg [3:0] alu_op;
+        reg [2:0] br_type, rd_en, wr_en;
+        reg [1:0] wb_sel;
+        reg reg_wr, sel_A, sel_B;
         reg R,Ii,S,L,B,auipc,lui,jal,jalr;
+        
+        wire [2:0] wr_en_E, rd_en_E;
+        wire [1:0] wb_sel_E, wb_sel_M ;
+        wire reg_wr_E, reg_wr_M;
         `define Type {R,Ii,S,L,B,auipc,lui,jal,jalr}
         `define Control {ImmSrc,sel_A, sel_B,wb_sel,reg_wr}
+
+        //pipeline stages
+        cp_DE control_pipe_Decode_Execute(alu_op_E, reg_wr_E, sel_A_E, sel_B_E, wr_en_E, rd_en_E, wb_sel_E, br_type_E, 
+                    alu_op, reg_wr, sel_A, sel_B, wr_en, rd_en, wb_sel, br_type, clk, rst);
+        
+        cp_EM control_pipe_Execute_Memory(reg_wr_M, wr_en_M, rd_en_M, wb_sel_M, 
+                    reg_wr_E, wr_en_E, rd_en_E, wb_sel_E, clk, rst);
+        
+        cp_MW control_pipe_Memory_Writeback(reg_wr_W, wb_sel_W, 
+                    reg_wr_M, wb_sel_M, clk, rst);
+
+
         //determine instruction type
     always@(*)begin    
         if (!rst) begin //what to do for lui, auipc,
@@ -60,7 +80,7 @@ module controller(output reg [2:0] ImmSrc, output reg [3:0] alu_op, output reg [
     
     always @(*) begin
         if (R||Ii) begin    //determine aluop using: R,Ii,lui,funct3,funct7
-            casex({R,funct7[30],funct7[25],funct3})//does not? cater for some Immediate instructions with fulty opcode
+            casex({R,funct7[30],funct7[25],funct3})//does not? cater for some Immediate instructions with faulty opcode
                 6'b100000:alu_op<=0;//add
                 6'b110000:alu_op<=1;//sub
                 6'b0xx000:alu_op<=0;//addi
@@ -92,17 +112,17 @@ module controller(output reg [2:0] ImmSrc, output reg [3:0] alu_op, output reg [
         end            
     end
     
-    always @(*) begin//for WriteControl
+    always @(*) begin//for wr_en
         case ({S})
-            1: WriteControl<=funct3;
-            default: WriteControl<=7;//retain current value
+            1: wr_en<=funct3;
+            default: wr_en<=7;//retain current value
         endcase
     end
 
-    always @(*) begin//for ReadControl
+    always @(*) begin//for rd_en
         case ({L})
-            1: ReadControl<=funct3;
-            default: ReadControl<=7;//output 0
+            1: rd_en<=funct3;
+            default: rd_en<=7;//output 0
         endcase
     end
 

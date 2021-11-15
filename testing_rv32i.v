@@ -15,7 +15,7 @@ module testing_rv_32i();
     initial begin
         clk<=0;
         rst<=1;
-        #80
+        #200
         rst<=0;
 //        user_wr<=1;
 //        user_sel<=0;

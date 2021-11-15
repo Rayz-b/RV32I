@@ -1,9 +1,12 @@
+//convert user_out to digits and display to LED
+//adding user_in, user_wr and user_sel   for user input of two numbers
+//removing reset to allow user input to remain in memory
 //adding support for lw,lb,lh,lbu,lhu
 //memory is byte addressable and thus every word is at an address which is a multiple of 4
 //for a byte read (no. of bytes of alignment - 1 - value of the 2 least significant digits) 
 //represents the number of bytes to shift the addressed content to the right to obtain data in proper form
-module data_memory(output reg [31:0] ReadData,input clk,rst, input [2:0] ReadControl, WriteControl, input [7:0] Address, input [31:0] WriteData);
-    reg [31:0] data_mem_file [31:0];//change to 255:0 when not debugging
+module data_memory(output reg [31:0] ReadData,input clk,rst, input [2:0] ReadControl, WriteControl, input [31:0] Address, WriteData);
+    reg [31:0] data_mem_file [31:0];//change depth to 255:0 when not debugging
     reg [31:0] store_intermediate, load_intermediate1,load_intermediate2;
     integer i;
     always @(posedge clk ) begin //write at WD3 if WE3

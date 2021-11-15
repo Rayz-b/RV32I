@@ -1,26 +1,45 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/08/2021 07:54:32 PM
-// Design Name: 
-// Module Name: testing_alu
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+module testing_alu;
+    reg [31:0] A,B;
+    reg[3:0] ALU_Sel;
+    wire CarryOut,ZeroOut;
+    wire [31:0] ALU_Out;
+    alu aalu( A,B, ALU_Sel,ALU_Out,CarryOut,ZeroOut);
 
-
-module testing_alu(
-
-    );
+    initial begin
+        A=5;
+        B=5;
+        ALU_Sel=0;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        #40
+        ALU_Sel=ALU_Sel+1;
+        
+        
+    end
 endmodule
