@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testing_rv_32i_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testing_rv_32i" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="143190000fs"></ZoomStartTime>
+      <ZoomEndTime time="947690001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="123"></NameColumnWidth>
+      <ValueColumnWidth column_width="75"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="93" />
+   <wvobject fp_name="/testing_rv_32i/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/forwardA_E" type="array">
+      <obj_property name="ElementShortName">forwardA_E[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forwardA_E[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/ReadControl" type="array">
+      <obj_property name="ElementShortName">ReadControl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadControl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/WriteControl" type="array">
+      <obj_property name="ElementShortName">WriteControl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteControl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/Address" type="array">
+      <obj_property name="ElementShortName">Address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/WriteData" type="array">
+      <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/result/y" type="array">
+      <obj_property name="ElementShortName">y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/result/d0" type="array">
+      <obj_property name="ElementShortName">d0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/result/d1" type="array">
+      <obj_property name="ElementShortName">d1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/result/d2" type="array">
+      <obj_property name="ElementShortName">d2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/result/s" type="array">
+      <obj_property name="ElementShortName">s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/result/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/result/WIDTH" type="array">
+      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/forwardB_E" type="array">
+      <obj_property name="ElementShortName">forwardB_E[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forwardB_E[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/rs1_fwd" type="array">
+      <obj_property name="ElementShortName">rs1_fwd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_fwd[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/rs2_Fwd/y" type="array">
+      <obj_property name="ElementShortName">y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/rs2_Fwd/d0" type="array">
+      <obj_property name="ElementShortName">d0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/rs2_Fwd/d1" type="array">
+      <obj_property name="ElementShortName">d1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/rs2_Fwd/d2" type="array">
+      <obj_property name="ElementShortName">d2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/rs2_Fwd/s" type="array">
+      <obj_property name="ElementShortName">s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/rs2_Fwd/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/rs2_Fwd/WIDTH" type="array">
+      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/rs2_fwd" type="array">
+      <obj_property name="ElementShortName">rs2_fwd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_fwd[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/PC_E" type="array">
+      <obj_property name="ElementShortName">PC_E[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_E[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E" type="array">
+      <obj_property name="ElementShortName">IR_E[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR_E[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus619" type="vbus">
+      <obj_property name="label">opcode_E</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus634" type="vbus">
+      <obj_property name="label">funct3_E</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus650" type="vbus">
+      <obj_property name="label">funct7_E</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus638" type="vbus">
+      <obj_property name="label">rs1_E</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus644" type="vbus">
+      <obj_property name="label">rs2_E</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus628" type="vbus">
+      <obj_property name="label">rd_E</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testing_rv_32i/rv/dp/IR_E[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/aalu/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/aalu/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/aalu/ALU_Sel" type="array">
+      <obj_property name="ElementShortName">ALU_Sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_Sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/aalu/ALU_Result" type="array">
+      <obj_property name="ElementShortName">ALU_Result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_Result[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/ALU_E" type="array">
+      <obj_property name="ElementShortName">ALU_E[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_E[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/ALU_M" type="array">
+      <obj_property name="ElementShortName">ALU_M[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_M[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/WD_M" type="array">
+      <obj_property name="ElementShortName">WD_M[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WD_M[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/ReadData" type="array">
+      <obj_property name="ElementShortName">ReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/con/rd_en" type="array">
+      <obj_property name="ElementShortName">rd_en[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_en[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/con/wr_en" type="array">
+      <obj_property name="ElementShortName">wr_en[2:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_en[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/con/rd_en_E" type="array">
+      <obj_property name="ElementShortName">rd_en_E[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_en_E[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/con/wr_en_E" type="array">
+      <obj_property name="ElementShortName">wr_en_E[2:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_en_E[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/con/rd_en_M" type="array">
+      <obj_property name="ElementShortName">rd_en_M[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_en_M[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/con/wr_en_M" type="array">
+      <obj_property name="ElementShortName">wr_en_M[2:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_en_M[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/ReadControl" type="array">
+      <obj_property name="ElementShortName">ReadControl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadControl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/WriteControl" type="array">
+      <obj_property name="ElementShortName">WriteControl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteControl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/Address" type="array">
+      <obj_property name="ElementShortName">Address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Address[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/WriteData" type="array">
+      <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/data_mem_file[3]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="label">datamem[3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/data_mem_file" type="array">
+      <obj_property name="ElementShortName">data_mem_file[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem_file[31:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/store_intermediate" type="array">
+      <obj_property name="ElementShortName">store_intermediate[31:0]</obj_property>
+      <obj_property name="ObjectShortName">store_intermediate[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/load_intermediate1" type="array">
+      <obj_property name="ElementShortName">load_intermediate1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">load_intermediate1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/data_mem/load_intermediate2" type="array">
+      <obj_property name="ElementShortName">load_intermediate2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">load_intermediate2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/RD_M" type="array">
+      <obj_property name="ElementShortName">RD_M[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RD_M[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/RD_W" type="array">
+      <obj_property name="ElementShortName">RD_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RD_W[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/wb_sel" type="array">
+      <obj_property name="ElementShortName">wb_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/Result" type="array">
+      <obj_property name="ElementShortName">Result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Result[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/PC_F" type="array">
+      <obj_property name="ElementShortName">PC_F[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_F[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/PC_D" type="array">
+      <obj_property name="ElementShortName">PC_D[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_D[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/PC_E" type="array">
+      <obj_property name="ElementShortName">PC_E[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_E[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/PC_M" type="array">
+      <obj_property name="ElementShortName">PC_M[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_M[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/PC_W" type="array">
+      <obj_property name="ElementShortName">PC_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_W[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[10]" type="array">
+      <obj_property name="ElementShortName">[10][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[11]" type="array">
+      <obj_property name="ElementShortName">[11][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[12]" type="array">
+      <obj_property name="ElementShortName">[12][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[13]" type="array">
+      <obj_property name="ElementShortName">[13][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[14]" type="array">
+      <obj_property name="ElementShortName">[14][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[15]" type="array">
+      <obj_property name="ElementShortName">[15][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[16]" type="array">
+      <obj_property name="ElementShortName">[16][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[16][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[17]" type="array">
+      <obj_property name="ElementShortName">[17][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[17][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[18]" type="array">
+      <obj_property name="ElementShortName">[18][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[18][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[19]" type="array">
+      <obj_property name="ElementShortName">[19][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[19][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[20]" type="array">
+      <obj_property name="ElementShortName">[20][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[20][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[21]" type="array">
+      <obj_property name="ElementShortName">[21][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[21][31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[22]" type="array">
+      <obj_property name="ElementShortName">[22][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[22][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/reg_file/reg_file[23]" type="array">
+      <obj_property name="ElementShortName">[23][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[23][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/stall_F" type="logic">
+      <obj_property name="ElementShortName">stall_F</obj_property>
+      <obj_property name="ObjectShortName">stall_F</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/stall_D" type="logic">
+      <obj_property name="ElementShortName">stall_D</obj_property>
+      <obj_property name="ObjectShortName">stall_D</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/flush_D" type="logic">
+      <obj_property name="ElementShortName">flush_D</obj_property>
+      <obj_property name="ObjectShortName">flush_D</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/flush_E" type="logic">
+      <obj_property name="ElementShortName">flush_E</obj_property>
+      <obj_property name="ObjectShortName">flush_E</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/forwardA_E" type="array">
+      <obj_property name="ElementShortName">forwardA_E[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forwardA_E[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/forwardB_E" type="array">
+      <obj_property name="ElementShortName">forwardB_E[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forwardB_E[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/dp/PC_E" type="array">
+      <obj_property name="ElementShortName">PC_E[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_E[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/rd_E" type="array">
+      <obj_property name="ElementShortName">rd_E[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_E[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/rd_M" type="array">
+      <obj_property name="ElementShortName">rd_M[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_M[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/rd_W" type="array">
+      <obj_property name="ElementShortName">rd_W[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_W[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/pcsrc_E" type="logic">
+      <obj_property name="ElementShortName">pcsrc_E</obj_property>
+      <obj_property name="ObjectShortName">pcsrc_E</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/regwrite_M" type="logic">
+      <obj_property name="ElementShortName">regwrite_M</obj_property>
+      <obj_property name="ObjectShortName">regwrite_M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/regwrite_W" type="logic">
+      <obj_property name="ElementShortName">regwrite_W</obj_property>
+      <obj_property name="ObjectShortName">regwrite_W</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/wb_sel_E" type="array">
+      <obj_property name="ElementShortName">wb_sel_E[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_sel_E[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/hzu/lwStall" type="logic">
+      <obj_property name="ElementShortName">lwStall</obj_property>
+      <obj_property name="ObjectShortName">lwStall</obj_property>
+   </wvobject>
+</wave_config>

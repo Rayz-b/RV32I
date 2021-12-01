@@ -2,7 +2,36 @@ module instruction_memory (output reg [31:0] Instr, input [31:0] PC);
     reg [31:0] instr_mem [48:0];
     
     initial
-    $readmemh("INSTRUCTION_MEM.mem", instr_mem);
+    $readmemh("Test_Imem.mem", instr_mem);
+//      testing hazards
+//    addi x10,x0,11
+//    addi x11,x0,14
+//    addi x12,x0,13
+//    addi x13,x0,19
+//    addi x14,x0,24
+//    or  x19,x10,x11
+//    sll x20,x11,x12
+//    sub x21,x13,x14
+//    addi x10,x0,10
+//    addi x11,x0,12
+//    addi x12,x0,15
+//    addi x13,x0,20
+//    add x15,x10,x13
+//    add x16,x13,x15
+//    sw x10,12(x0)
+//    lw x17,12(x0)
+//    add x18,x0,x17
+//    beq x0,x0,taken
+//    addi x22,x0,22
+// taken:
+// 	addi x22,x0,23
+//    beq x22,x0,taken1
+// stop:
+// 	nop
+//    beq x0,x0,stop
+// taken1:
+// 	addi x23,x0,23
+//    $readmemh("INSTRUCTION_MEM.mem", instr_mem);
     
     always@(PC) begin
         Instr <= instr_mem[PC>>2];
@@ -54,24 +83,40 @@ endmodule
 //     j stop
 
 
-//      testing lb
-//     addi x8 , x0 , 64
-//     addi x9 , x0 , 50
-//     sb   x8 , 0(x0)
-//     sb   x9 , 1(x0)
-//     lb   x9 , 0(x0)
-//     lb   x8 , 1(x0)
-//gcd :
-//     beq x8 , x9 , stop
-//     blt x8 , x9 , less
-//     sub x8 , x8 , x9
-//     j gcd
-//less :
-//     sub x9 , x9 , x8
-//     j gcd
-//     sb    x9 , 2(x0)
-//stop :
-//     j stop
+//      testing hazards
+//    addi x10,x0,11
+//    addi x11,x0,14
+//    addi x12,x0,13
+//    addi x13,x0,19
+//    addi x14,x0,24
+//    or  x19,x10,x11
+//    sll x20,x11,x12
+//    sub x21,x13,x14
+//    addi x10,x0,10
+//    addi x11,x0,12
+//    addi x12,x0,15
+//    addi x13,x0,20
+//    add x15,x10,x13
+//    add x16,x13,x15
+//    sw x10,12(x0)
+//    lw x17,12(x0)
+//    add x18,x0,x17
+//    beq x0,x0,taken
+//    addi x22,x0,22
+// taken:
+// 	addi x22,x0,23
+//    beq x22,x0,taken1
+// stop:
+// 	nop
+//    beq x0,x0,stop
+// taken1:
+// 	addi x23,x0,23
+    
+    
 
+    
+    
+
+    
 //ASSEMBLER
 //https://riscvasm.lucasteske.dev/#

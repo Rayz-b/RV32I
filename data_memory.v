@@ -9,7 +9,7 @@ module data_memory(output reg [31:0] ReadData,input clk,rst, input [2:0] ReadCon
     reg [31:0] data_mem_file [31:0];//change depth to 255:0 when not debugging
     reg [31:0] store_intermediate, load_intermediate1,load_intermediate2;
     integer i;
-    always @(posedge clk ) begin //write at WD3 if WE3
+    always @(negedge clk ) begin //write at WD3 if WE3
         if(!rst)begin
             case(WriteControl)//room for exploitation with funct3 and S or decrease no. of selection bits to 2        //assuming that data is in least significant bits
                 3'b000:begin

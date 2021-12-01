@@ -28,11 +28,12 @@
 module controller(output reg [2:0] ImmSrc, output [3:0] alu_op_E, output [2:0] br_type_E, rd_en_M, wr_en_M,
                     output reg_wr_W, sel_A_E, sel_B_E,
                     output [1:0] wb_sel_W,
-
-                    input[6:0] opcode,    //for all instructions
+                    output reg_wr_M, output [1:0] wb_sel_E,
+                    input [6:0] opcode,    //for all instructions
                     input [14:12] funct3, //for R,I,S,B and R4 Type   not for U and J Type
                     input [31:25] funct7, //only for R-Type         //-*change to base x:0
-                    input clk, rst);
+                    input clk, rst,
+                    input flush_E);
                     
         reg [3:0] alu_op;
         reg [2:0] br_type, rd_en, wr_en;
@@ -41,14 +42,14 @@ module controller(output reg [2:0] ImmSrc, output [3:0] alu_op_E, output [2:0] b
         reg R,Ii,S,L,B,auipc,lui,jal,jalr;
         
         wire [2:0] wr_en_E, rd_en_E;
-        wire [1:0] wb_sel_E, wb_sel_M ;
-        wire reg_wr_E, reg_wr_M;
+        wire [1:0] wb_sel_M ;
+        wire reg_wr_E;
         `define Type {R,Ii,S,L,B,auipc,lui,jal,jalr}
         `define Control {ImmSrc,sel_A, sel_B,wb_sel,reg_wr}
 
         //pipeline stages
         cp_DE control_pipe_Decode_Execute(alu_op_E, reg_wr_E, sel_A_E, sel_B_E, wr_en_E, rd_en_E, wb_sel_E, br_type_E, 
-                    alu_op, reg_wr, sel_A, sel_B, wr_en, rd_en, wb_sel, br_type, clk, rst);
+                    alu_op, reg_wr, sel_A, sel_B, wr_en, rd_en, wb_sel, br_type, clk, rst, flush_E);
         
         cp_EM control_pipe_Execute_Memory(reg_wr_M, wr_en_M, rd_en_M, wb_sel_M, 
                     reg_wr_E, wr_en_E, rd_en_E, wb_sel_E, clk, rst);
@@ -138,11 +139,11 @@ module controller(output reg [2:0] ImmSrc, output [3:0] alu_op_E, output [2:0] b
     always@(*)begin
         case(`Type)//Type {R,Ii,S,L,B,auipc,lui,jal,jalr}
         //Control {ImmSrc,sel_A, sel_B,wb_sel,reg_wr}
-            10'b100000000:`Control<=8'bzzz10011;//R
+            10'b100000000:`Control<=8'bzzz10011;//R         //does zzz propagate?
             10'b010000000:`Control<=8'b00011011;//Ii
-            10'b001000000:`Control<=8'b00111zz0;//S
+            10'b001000000:`Control<=8'b00111000;//S
             10'b000100000:`Control<=8'b00011101;//L
-            10'b000010000:`Control<=8'b01001zz0;//B
+            10'b000010000:`Control<=8'b01001000;//B
             10'b000001000:`Control<=8'b01101011;//auipc
             10'b000000100:`Control<=8'b01111011;//lui
             10'b000000010:`Control<=8'b10001001;//jal

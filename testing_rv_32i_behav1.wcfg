@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testing_rv_32i_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testing_rv_32i" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="118780000fs"></ZoomStartTime>
+      <ZoomEndTime time="906129102fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="202"></NameColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="35" />
+   <wvobject fp_name="/testing_rv_32i/rv/Result" type="array">
+      <obj_property name="ElementShortName">Result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/funct3" type="array">
+      <obj_property name="ElementShortName">funct3[14:12]</obj_property>
+      <obj_property name="ObjectShortName">funct3[14:12]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/funct7" type="array">
+      <obj_property name="ElementShortName">funct7[31:25]</obj_property>
+      <obj_property name="ObjectShortName">funct7[31:25]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/sel_A" type="logic">
+      <obj_property name="ElementShortName">sel_A</obj_property>
+      <obj_property name="ObjectShortName">sel_A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/sel_B" type="logic">
+      <obj_property name="ElementShortName">sel_B</obj_property>
+      <obj_property name="ObjectShortName">sel_B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/alu_op" type="array">
+      <obj_property name="ElementShortName">alu_op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/ImmSrc" type="array">
+      <obj_property name="ElementShortName">ImmSrc[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ImmSrc[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/br_type" type="array">
+      <obj_property name="ElementShortName">br_type[2:0]</obj_property>
+      <obj_property name="ObjectShortName">br_type[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/ReadControl" type="array">
+      <obj_property name="ElementShortName">ReadControl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadControl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/WriteControl" type="array">
+      <obj_property name="ElementShortName">WriteControl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteControl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/wb_sel" type="array">
+      <obj_property name="ElementShortName">wb_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/stall_F" type="logic">
+      <obj_property name="ElementShortName">stall_F</obj_property>
+      <obj_property name="ObjectShortName">stall_F</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/stall_D" type="logic">
+      <obj_property name="ElementShortName">stall_D</obj_property>
+      <obj_property name="ObjectShortName">stall_D</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/flush_D" type="logic">
+      <obj_property name="ElementShortName">flush_D</obj_property>
+      <obj_property name="ObjectShortName">flush_D</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/flush_E" type="logic">
+      <obj_property name="ElementShortName">flush_E</obj_property>
+      <obj_property name="ObjectShortName">flush_E</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/br_taken" type="logic">
+      <obj_property name="ElementShortName">br_taken</obj_property>
+      <obj_property name="ObjectShortName">br_taken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/forwardA_E" type="array">
+      <obj_property name="ElementShortName">forwardA_E[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forwardA_E[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/forwardB_E" type="array">
+      <obj_property name="ElementShortName">forwardB_E[1:0]</obj_property>
+      <obj_property name="ObjectShortName">forwardB_E[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/rs1_D" type="array">
+      <obj_property name="ElementShortName">rs1_D[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_D[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/rs2_D" type="array">
+      <obj_property name="ElementShortName">rs2_D[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_D[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/rs1_E" type="array">
+      <obj_property name="ElementShortName">rs1_E[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_E[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/rs2_E" type="array">
+      <obj_property name="ElementShortName">rs2_E[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_E[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/rd_E" type="array">
+      <obj_property name="ElementShortName">rd_E[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_E[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/rd_M" type="array">
+      <obj_property name="ElementShortName">rd_M[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_M[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/rd_W" type="array">
+      <obj_property name="ElementShortName">rd_W[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_W[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/reg_wr_M" type="logic">
+      <obj_property name="ElementShortName">reg_wr_M</obj_property>
+      <obj_property name="ObjectShortName">reg_wr_M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/reg_wr_W" type="logic">
+      <obj_property name="ElementShortName">reg_wr_W</obj_property>
+      <obj_property name="ObjectShortName">reg_wr_W</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/wb_sel_E" type="array">
+      <obj_property name="ElementShortName">wb_sel_E[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_sel_E[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/IR_D" type="array">
+      <obj_property name="ElementShortName">IR_D[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR_D[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/IR_E" type="array">
+      <obj_property name="ElementShortName">IR_E[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR_E[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/IR_M" type="array">
+      <obj_property name="ElementShortName">IR_M[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR_M[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_rv_32i/rv/IR_W" type="array">
+      <obj_property name="ElementShortName">IR_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR_W[31:0]</obj_property>
+   </wvobject>
+</wave_config>
